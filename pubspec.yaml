@@ -1,0 +1,17 @@
+name: dart_racingcar
+description: 자동차 경주 게임
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  test: ^1.26.2
+  mockito: ^5.4.2
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  lints: ^3.0.0
