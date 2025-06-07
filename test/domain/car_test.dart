@@ -5,11 +5,13 @@ void main() {
   test('최대 이름 길이를 넘을 수 없다.', () {
     // given
     String validName = "abcde";
-    String invalidName = "abcdef";
+    String invalidName1 = "abcdef";
+    String invalidName2 = "";
 
     // when, then
     expect(() => Car(validName), returnsNormally);
-    expect(() => Car(invalidName), throwsA(isA<ArgumentError>()));
+    expect(() => Car(invalidName1), throwsA(isA<ArgumentError>()));
+    expect(() => Car(invalidName2), throwsA(isA<ArgumentError>()));
   });
 
   test('전달되는 숫자에 따라 이동한다.', () {

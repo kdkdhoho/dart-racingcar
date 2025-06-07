@@ -7,7 +7,7 @@ class Car {
   int _distance = 0;
 
   Car(this._name) {
-    if (_name.length > 5) {
+    if (_name.isEmpty || _name.length > 5) {
       throw new ArgumentError('이름은 5자 이하만 가능합니다.');
     }
   }
